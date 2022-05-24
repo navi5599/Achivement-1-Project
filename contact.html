@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link rel="shortcut icon" href="img/favicon.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.production.css"/>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1 class="ivan-kelava_logo">Ivan Kelava</h1>
+      <nav class="main-navigation page-header_item">
+        <ul class="navigation-list" role="menubar">
+          <li role="presentation">
+            <a href="index.html" target="_blank" role="menuitem">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="about.html" target="_blank" role="menuitem">About me</a>
+          </li>
+          <li role="presentation">
+            <a href="work.html" target="_blank" role="menuitem">Work</a>
+          </li>
+          <li role="presentation">
+            <a href="contact.html" target="_blank" role="menuitem">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1 class="contact_info">Contact</h1>
+
+    <div class="contact_info">
+      Ivan Kelava<br>
+      Bahnhofstrasse 31<br>
+      86415 Mering<br>
+      Deutschland<br>
+      <a href="tel:+491707183441">Tel +49 170 718 3441</a><br>
+      <a href="skype:uberman5599@hotmail.com">Skype: uberman5599@hotmail.com</a><br>
+      <a href="mailto:ivkelava10@gmail.com">ivkelava10@gmail.com</a><br>
+    </div>
+
+    <p class="contact_info">If you have more questions,feel free to contact me through this contact form</p>
+
+    <div class="contact_info">
+      <form action="login-form-action" method="post">
+        <label for="fname">First name</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+
+        <label for="lname">Last name</label><br>
+        <input type="text" id="lname" name="lname" required><br><br>
+
+        <label for="telephone">Telephone<label/><br>
+        <input type="tel" id="telephone"><br>
+
+        <label for="email">E-mail</label><br>
+        <input type="email" id="email" name="user_email" required><br>
+
+        <button class="contact_button" type="submit">Send</button>
+      <form/>
+    </div>
+    <footer class="page-footer">
+      <p>Find me on</p>
+      <div class="social-media">
+        <a href="https://github.com/navi5599" targer="_blank"><img src="img/git.svg" class="github-icon" alt="Github icon"></a>
+        <a href="https://twitter.com" targer="_blank"><img src="img/twetr.svg" class="twitter-icon" alt="Twitter icon"></a>
+        <a href="https://www.linkedin.com/in/ivan-kelava-68527023b/" targer="_blank"><img src="img/linkd.svg" class="linkedin-icon" alt="LinkedIn icon"></a>
+      <div/>
+    </footer>
+
+    <script src="js/tota11y.min.js"></script>
+  </body>
+</html>
