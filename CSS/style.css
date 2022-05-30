@@ -84,7 +84,7 @@ a:active {
   color: var(--links-texts-color);
 }
 
-button {
+button, {
   border: none;
   font-family: inherit;
   display: inline-block;
@@ -97,21 +97,17 @@ button {
   transition: 0.5s ease;
 }
 
-button:active {
+button:active, {
   background-color: var(--btn-main);
   box-shadow: 0 5px #666;
   transform: translateY(2px);
 }
 
 button:hover,
-button:focus {
+button:focus, {
   cursor: pointer;
   opacity: 0.77;
   background-color: var(--btn-hover);
-}
-
-.download-cv_link {
-  color: var(--btn-text);
 }
 
 .contact_button {
