@@ -1,19 +1,19 @@
 :root {
-  --bgn-color: #E0DFDF;
-  --header-color: #CBCBCB;
+  --bgn-color: #e0dfdf;
+  --header-color: #cbcbcb;
   --links-texts-color: #632f51;
-  --btn-main: #5C1DA6;
-  --btn-hover: #7145E2;
+  --btn-main: #5c1da6;
+  --btn-hover: #7145e2;
   --btn-text: white;
-  --svgsun-1: #E8E0FD;
-  --svgsun-2: #9F7CF9;
-  --svgsun-3: #7145E2;
-  --svgsun-4: #5C1DA6;
-  --svgsun-5: #2F038E;
+  --svgsun-1: #e8e0fd;
+  --svgsun-2: #9f7cf9;
+  --svgsun-3: #7145e2;
+  --svgsun-4: #5c1da6;
+  --svgsun-5: #2f038e;
 }
 
 * {
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -74,7 +74,8 @@ a:visited {
   color: var(--links-texts-color);
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: var(--btn-text);
   text-decoration: none;
 }
@@ -102,7 +103,8 @@ button:active {
   transform: translateY(2px);
 }
 
-button:hover, button:focus {
+button:hover,
+button:focus {
   cursor: pointer;
   opacity: 0.77;
   background-color: var(--btn-hover);
@@ -125,7 +127,6 @@ button:hover, button:focus {
   padding-top: 40px;
 }
 
-
 .profile_portrait {
   width: 250px;
   height: 250px;
@@ -137,7 +138,7 @@ button:hover, button:focus {
 .page-footer {
   clear: both;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   text-align: center;
   height: 250px;
   padding-top: 100px;
@@ -161,13 +162,15 @@ button:hover, button:focus {
   text-align: center;
 }
 
-.profile h1,p,a {
+.profile h1,
+p,
+a {
   text-align: center;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 15px;
 }
 
@@ -188,38 +191,38 @@ button:hover, button:focus {
 
 table {
   margin: 0 auto;
+  padding-top: 20px;
 }
 
 .about-list {
   list-style-type: none;
 }
 
-table {
-  padding-top: 20px;
-}
-
 .svg {
   padding-top: 40px;
   padding-bottom: 40px;
   text-align: center;
-
 }
 
 /* Boat_animation */
 
 @keyframes color-change {
-  0%  {
+  0% {
     fill: var(--svgsun-1);
   }
+
   25% {
     fill: var(--svgsun-2);
   }
+
   50% {
     fill: var(--svgsun-3);
   }
+
   75% {
     fill: var(--svgsun-4);
   }
+
   100% {
     fill: var(--svgsun-5);
   }
@@ -229,6 +232,7 @@ table {
   from {
     transform: translate(-202.345px, -187.561px);
   }
+
   to {
     transform: translate(-202.345px, -167.561px);
   }
@@ -238,6 +242,7 @@ table {
   from {
     transform: translate(584.82569px, 129.22117px);
   }
+
   to {
     transform: translate(584.82569px, 109.22117px);
   }
@@ -247,7 +252,9 @@ table {
   animation: 5s pillar-movement infinite alternate linear;
 }
 
-.boat, .flag, .fence {
+.boat,
+.flag,
+.fence {
   animation: 5s boat-movement infinite alternate linear;
 }
 
@@ -291,23 +298,27 @@ table {
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
   }
+
   .grid_item: last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }
 }
 
-@media all and (max width: 750px) {
+@media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
   }
+
   .grid_item: last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }
