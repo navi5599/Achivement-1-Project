@@ -390,6 +390,11 @@ table {
   h1 {
     font-size: 22px;
   }
+
+  svg {
+    width: 395.30964px;
+    height: 124.87772px;
+  }
 }
 
 @media all and (min-width: 400px) and (max-width: 750px) {
@@ -406,6 +411,11 @@ table {
 
   h1 {
     font-size: 22px;
+  }
+
+  svg {
+    width: 595.30964px;
+    height: 324.87772px;
   }
 }
 
