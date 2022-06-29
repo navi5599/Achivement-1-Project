@@ -79,6 +79,17 @@ a:hover {
   text-decoration: none;
 }
 
+.a-button:hover {
+  color: white;
+  text-decoration: none;
+  border: 1px #632f51;
+  border-radius: 4px;
+  background-color: #632f51;
+  padding: 4px;
+  margin: -4px;
+  transition: 0.3s ease;
+}
+
 a:focus {
   color: white;
   text-decoration: none;
@@ -146,8 +157,32 @@ button:focus {
   margin-top: 30px;
 }
 
-.contact_info {
+.contact-card {
+  margin: 0 auto;
+  height: 608px;
+  width: 745px;
+  background-color: rgb(255, 254, 254);
+  box-shadow: 0.5px 0.5px 10px rgb(62, 62, 62);
+  border-radius: .5rem;
+  padding: 25px;
+}
+
+.contact-header {
   text-align: center;
+}
+
+.contact-body {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.text-div, .button-section {
+  display: flex;
+  justify-content: center;
+}
+
+.contact_footer {
+  margin-top: 100px;
 }
 
 .profile-text {
@@ -160,6 +195,7 @@ button:focus {
   float: left;
   margin-right: 40px;
   border-radius: 50%;
+  filter: drop-shadow(5px 5px 25px black);
 }
 
 .page-footer {
@@ -188,6 +224,7 @@ button:focus {
 
 .code-link {
   display: block;
+  box-sizing: border-box;
 }
 
 .about-me_div {
@@ -214,6 +251,13 @@ a {
   padding: 10px;
   margin: 0;
   text-align: center;
+  border-radius: .35rem;
+}
+
+.grid_item:hover {
+  transform: scale(1.05);
+  transition: 0.5s ease;
+  box-shadow: 0.5px 0.5px 10px black;
 }
 
 .grid_links {
@@ -355,26 +399,10 @@ table {
 
 /* Footer icon animations */
 
-.twitter-icon:hover {
-  width: 40px;
-  -webkit-animation: 2s ease;
-  animation: 2s ease;
-}
-
-.github-icon:hover {
-  width: 40px;
-  -webkit-transform: rotate(-25deg);
-  -ms-transform: rotate(-25deg);
-  transform: rotate(-25deg);
-  -webkit-animation: 2s ease;
-  animation: 2s ease;
-}
-
+.twitter-icon:hover,
+.github-icon:hover,
 .linkedin-icon:hover {
-  width: 40px;
-  -webkit-transform: rotate(25deg);
-  -ms-transform: rotate(25deg);
-  transform: rotate(25deg);
+  transform: scale(1.32);
   -webkit-animation: 2s ease;
   animation: 2s ease;
 }

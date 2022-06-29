@@ -17,53 +17,62 @@
       <nav class="main-navigation page-header_item">
         <ul class="navigation-list" role="menubar">
           <li role="presentation">
-            <a href="index.html" target="_blank" role="menuitem">Home</a>
+            <a class="a-button" href="index.html" target="_blank" role="menuitem">Home</a>
           </li>
           <li role="presentation">
-            <a href="about.html" target="_blank" role="menuitem">About me</a>
+            <a class="a-button" href="about.html" target="_blank" role="menuitem">About me</a>
           </li>
           <li role="presentation">
-            <a href="work.html" target="_blank" role="menuitem">Work</a>
+            <a class="a-button" href="work.html" target="_blank" role="menuitem">Work</a>
           </li>
           <li role="presentation">
-            <a href="contact.html" target="_blank" role="menuitem">Contact</a>
+            <a class="a-button" href="contact.html" target="_blank" role="menuitem">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <h1 class="contact_info">Contact Information</h1>
+    <div class="contact-card">
+      <div class="contact-header">
+        <h2>Contact</h2>
+      </div>
+      <div class="contact_info">
+        <form class="contact_form" action="login-form-action" method="post">
+          <div class="contact-body">
+            <div class="contact_part">
+              <label for="fname">First name</label><br>
+              <input type="text" id="fname" name="fname" required><br>
+    
+              <label for="lname">Last name</label><br>
+              <input type="text" id="lname" name="lname" required><br><br>
+            </div>
+            
+            <div class="contact_part">
+              <label for="telephone">Telephone</label><br>
+              <input type="tel" id="telephone"><br>
+    
+              <label for="e-mail">E-mail</label><br>
+              <input type="email" id="e-mail" name="user_email" required><br>
+            </div>
+          </div>
+        
+          <div class="text-div">
+            <textarea name="message" id="message" cols="58" rows="7" placeholder="Please type your message.."></textarea>
+          </div>
 
-    <div class="contact_info">
-      Ivan Kelava<br>
-      Bahnhofstrasse 31<br>
-      86415 Mering<br>
-      Deutschland<br>
-      <a href="tel:+491707183441">Tel +49 170 718 3441</a><br>
-      <a href="skype:uberman5599@hotmail.com">Skype: uberman5599@hotmail.com</a><br>
-      <a href="mailto:ivkelava10@gmail.com">ivkelava10@gmail.com</a><br>
+          <div class="button-section">
+            <button class="contact_button" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+  
+      <div class="contact_info contact_footer">
+        <a class="a-button" href="tel:+491707183441">Tel +49 170 718 3441</a><br>
+        <a class="a-button" href="skype:uberman5599@hotmail.com">Skype: uberman5599@hotmail.com</a><br>
+        <a class="a-button" href="mailto:ivkelava10@gmail.com">ivkelava10@gmail.com</a><br>
+      </div>
     </div>
-
-    <p class="contact_info">If you have more questions,feel free to contact me through this contact form</p>
-
-    <div class="contact_info">
-      <form action="login-form-action" method="post">
-        <label for="fname">First name</label><br>
-        <input type="text" id="fname" name="fname" required><br>
-
-        <label for="lname">Last name</label><br>
-        <input type="text" id="lname" name="lname" required><br><br>
-
-        <label for="telephone">Telephone</label><br>
-        <input type="tel" id="telephone"><br>
-
-        <label for="e-mail">E-mail</label><br>
-        <input type="email" id="e-mail" name="user_email" required><br>
-
-        <button class="contact_button" type="submit">Send</button>
-      </form>
-    </div>
-
+    
     <footer class="page-footer">
       <p>Find me on</p>
       <div class="social-media">
