@@ -5,6 +5,9 @@
 * Browsers: last 4 version
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Monoton&family=Montserrat:wght@300;500&family=Poppins:wght@300&family=Roboto+Condensed&family=Roboto:wght@100;300&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Herr+Von+Muellerhoff&family=Monoton&family=Montserrat:wght@300;500&family=Poppins:wght@300&family=Roboto+Condensed&family=Roboto:wght@100;300&family=Shadows+Into+Light&display=swap');
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -15,7 +18,8 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #e0dfdf;
+  background-color: #f6f7ff;
+  color: #021b79;
 }
 
 h1 {
@@ -24,22 +28,35 @@ h1 {
 }
 
 .ivan-kelava_logo {
+  font-family: 'Herr Von Muellerhoff', cursive;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 40px;
   letter-spacing: 3px;
-  padding-bottom: 10px;
-  color: #632f51;
+  margin: 0;
+  padding: 0;
+  color: #f5edfd;
 }
 
 .page-header {
   display: -webkit-box;
   display: -ms-flexbox;
+
   display: flex;
   width: 100%;
   height: 70px;
   padding: 10px;
   margin-bottom: 100px;
-  background-color: #cbcbcb;
+  background: #0575e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #021b79,
+    #0575e6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #021b79,
+    #0575e6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .page-header_item {
@@ -65,26 +82,24 @@ h1 {
 }
 
 a {
-  color: #632f51;
+  color: #021b79;
   text-decoration: none;
   font-weight: bold;
 }
 
-a:visited {
-  color: #632f51;
-}
-
 a:hover {
   color: white;
-  text-decoration: none;
+  text-decoration: underline;
+  transform: scale(1.2);
+  transition: ease-in-out 1s;
 }
 
 .a-button:hover {
-  color: white;
+  color: #021b79;
   text-decoration: none;
-  border: 1px #632f51;
+  border: 1px #f7f5fe;
   border-radius: 4px;
-  background-color: #632f51;
+  background-color: #fcfaff;
   padding: 4px;
   margin: -4px;
   transition: 0.3s ease;
@@ -93,10 +108,6 @@ a:hover {
 a:focus {
   color: white;
   text-decoration: none;
-}
-
-a:active {
-  color: #632f51;
 }
 
 .cv-button {
@@ -121,18 +132,21 @@ button {
   border: none;
   font-family: inherit;
   display: inline-block;
-  background-color: #5c1da6;
+  background-color: #021b79;
   color: white;
   text-decoration: none;
-  padding: 10px;
+  text-align: center;
+  align-items: center;
+  padding: 0px;
   border-radius: 3px;
   height: 35px;
+  width: 60px;
   -webkit-transition: 0.5s ease;
   -o-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
-button:active, {
+button:active {
   background-color: #5c1da6;
   -webkit-transform: translateY(2px);
   -ms-transform: translateY(2px);
@@ -143,13 +157,11 @@ button:hover,
 .cv-button:hover {
   cursor: pointer;
   opacity: 0.77;
-  background-color: #7145e2;
 }
 
 button:focus {
   cursor: pointer;
   opacity: 0.77;
-  background-color: #7145e2;
 }
 
 .contact_button {
@@ -159,11 +171,11 @@ button:focus {
 
 .contact-card {
   margin: 0 auto;
-  height: 608px;
-  width: 745px;
-  background-color: rgb(255, 254, 254);
-  box-shadow: 0.5px 0.5px 10px rgb(62, 62, 62);
-  border-radius: .5rem;
+  height: 448px;
+  width: 645px;
+  background: transparent;
+  box-shadow: 0.5px 0.5px 10px rgb(22, 2, 94);
+  border-radius: 0.5rem;
   padding: 25px;
 }
 
@@ -176,7 +188,8 @@ button:focus {
   justify-content: space-evenly;
 }
 
-.text-div, .button-section {
+.text-div,
+.button-section {
   display: flex;
   justify-content: center;
 }
@@ -195,7 +208,8 @@ button:focus {
   float: left;
   margin-right: 40px;
   border-radius: 50%;
-  filter: drop-shadow(5px 5px 25px black);
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.19));
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .page-footer {
@@ -244,20 +258,22 @@ a {
   -ms-grid-columns: 1fr 15px 1fr 15px 1fr 15px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 15px;
+  width: 92.5%;
+  margin: 0 auto;
 }
 
 .grid_item {
-  background-color: #cbcbcb;
+  background: transparent;
   padding: 10px;
   margin: 0;
   text-align: center;
-  border-radius: .35rem;
+  border-radius: 0.35rem;
+  box-shadow: 0.5px 0.5px 10px rgb(22, 2, 94);
 }
 
 .grid_item:hover {
   transform: scale(1.05);
   transition: 0.5s ease;
-  box-shadow: 0.5px 0.5px 10px black;
 }
 
 .grid_links {
@@ -459,5 +475,163 @@ table {
 
   h1 {
     font-size: 22px;
+  }
+}
+
+/* Modals */
+
+.modal_container_1,
+.modal_container_2 {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  opacity: 0;
+  transition: ease-in-out 0.33s;
+}
+
+.modal_active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal_1,
+.modal_2 {
+  background-color: whitesmoke;
+  max-width: 100%;
+  width: 60%;
+  height: 90%;
+  border-radius: 5px;
+  overflow: scroll;
+  position: relative;
+}
+
+.modal_heading,
+.modal_list,
+.p_modal {
+  text-align: center;
+}
+
+.modal_section {
+  display: flex;
+  padding: 15px;
+  opacity: 0.7;
+}
+
+.modal_text,
+.modal_list {
+  width: 50%;
+}
+
+.modal_list li {
+  list-style: none;
+}
+
+.modal_buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+.content_buttons {
+  margin-top: 10px;
+}
+
+.content_buttons a {
+  margin-left: 15px;
+}
+
+.modal_close_button {
+  margin-right: 15px;
+}
+
+.close {
+  padding: 0px;
+}
+
+.a-button-modal:hover {
+  color: rgb(56, 101, 249);
+  text-decoration: underline;
+  transition: 0.3s ease;
+}
+
+.x_modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+/* MODAL PICS*/
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
   }
 }
