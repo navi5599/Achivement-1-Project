@@ -1,0 +1,25 @@
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+  height: 250px;
+  text-align: center;
+}
+
+.profile-text {
+  padding-top: 40px;
+}
+
+.profile_portrait {
+  width: 250px;
+  height: 250px;
+  float: left;
+  margin-right: 40px;
+  border-radius: 50%;
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.19));
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.5) 0px 6px 6px;
+}
+
+.code-link {
+  display: block;
+  box-sizing: border-box;
+}

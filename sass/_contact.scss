@@ -1,0 +1,35 @@
+@use './colors';
+
+.contact_button {
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.contact-card {
+  margin: 0 auto;
+  height: 448px;
+  width: 645px;
+  background: transparent;
+  box-shadow: 0.5px 0.5px 10px colors.$darkBlue;
+  border-radius: 0.5rem;
+  padding: 25px;
+}
+
+.contact-header {
+  text-align: center;
+}
+
+.contact-body {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.text-div,
+.button-section {
+  display: flex;
+  justify-content: center;
+}
+
+.contact_footer {
+  margin-top: 100px;
+}
