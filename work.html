@@ -11,80 +11,107 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@100&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" /> -->
+    <link rel="stylesheet" type="text/css" href="dist/style.css" />
   </head>
   <body>
-    <header class="page-header">
-      <h1 class="ivan-kelava_logo">Ivan Kelava</h1>
-      <nav class="main-navigation page-header_item">
-        <ul class="navigation-list" role="menubar">
-          <li role="presentation">
-            <a
-              class="a-button"
-              href="index.html"
-              target="_blank"
-              role="menuitem"
-              >Home</a
-            >
-          </li>
-          <li role="presentation">
-            <a
-              class="a-button"
-              href="about.html"
-              target="_blank"
-              role="menuitem"
-              >About me</a
-            >
-          </li>
-          <li role="presentation">
-            <a class="a-button" href="work.html" target="_blank" role="menuitem"
-              >Work</a
-            >
-          </li>
-          <li role="presentation">
-            <a
-              class="a-button"
-              href="contact.html"
-              target="_blank"
-              role="menuitem"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <nav>
+      <div class="logo">
+        <h1>Ivan Kelava</h1>
+      </div>
+      <ul class="navigation-list" role="menubar">
+        <li role="presentation">
+          <a class="a-button" href="index.html" target="_blank" role="menuitem"
+            >Home</a
+          >
+        </li>
+        <li role="presentation">
+          <a class="a-button" href="about.html" target="_blank" role="menuitem"
+            >About me</a
+          >
+        </li>
+        <li role="presentation">
+          <a class="a-button" href="work.html" target="_blank" role="menuitem"
+            >Work</a
+          >
+        </li>
+        <li role="presentation">
+          <a
+            class="a-button"
+            href="contact.html"
+            target="_blank"
+            role="menuitem"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
 
     <section>
       <h1 class="work">My Work</h1>
       <div class="grid">
         <div class="grid_item grid_1">
-          <h2>Meet App</h2>
+          <h2>Meet app</h2>
           <p>
             Serverless PWA App made using React.Uses Google api to fetch data
-            for events.
+            for events.Developed using TDD approach.
           </p>
-          <button class="btn_1" data-modal-id="1">View</button>
+          <div class="button_div">
+            <button class="btn_1" data-modal-id="1">View</button>
+          </div>
         </div>
 
         <div class="grid_item">
           <h2>My Flix Movie app</h2>
           <p>
-            Within this project, I was responsible for the frontend. It’s
-            written in React.js. Additionally, I've created the HTML and CSS
-            templates.
+            This is a simple movie app built with React-Redux for client side,
+            and Mongo-Express for REST API that app uses,to fetch data about
+            movies.
           </p>
-          <button class="btn_2" data-modal-id="2">View</button>
+          <div class="button_div">
+            <button class="btn_2" data-modal-id="2">View</button>
+          </div>
         </div>
 
         <div class="grid_item">
           <h2>Pokedex App</h2>
           <p>
+            This is a simple JavaScript app,that fetches a list of 150 Pokemons
+            from external public API.
+          </p>
+          <div class="button_div btn_33">
+            <button class="btn_3" data-modal-id="3">View</button>
+          </div>
+        </div>
+
+        <div class="grid_item">
+          <h2>Chat App</h2>
+          <p>
             Within this project, I was responsible for the frontend. It’s
             written in React.js. Additionally, I've created the HTML and CSS
             templates.
           </p>
-          <button class="btn_3">View</button>
+          <div class="button_div">
+            <button class="btn_4" data-modal-id="4">View</button>
+          </div>
+        </div>
+
+        <div class="grid_item">
+          <h2>Meet App</h2>
+          <p>
+            Within this project, I was responsible for the frontend. It’s
+            written in React.js. Additionally, I've created the HTML and CSS
+            templates.
+          </p>
+          <div class="button_div">
+            <button class="btn_5" data-modal-id="5">View</button>
+          </div>
         </div>
 
         <div class="grid_item">
@@ -94,27 +121,9 @@
             written in React.js. Additionally, I've created the HTML and CSS
             templates.
           </p>
-          <button>View</button>
-        </div>
-
-        <div class="grid_item">
-          <h2>Mobile web app</h2>
-          <p>
-            Within this project, I was responsible for the frontend. It’s
-            written in React.js. Additionally, I've created the HTML and CSS
-            templates.
-          </p>
-          <button>View</button>
-        </div>
-
-        <div class="grid_item">
-          <h2>Mobile web app</h2>
-          <p>
-            Within this project, I was responsible for the frontend. It’s
-            written in React.js. Additionally, I've created the HTML and CSS
-            templates.
-          </p>
-          <button>View</button>
+          <div class="button_div">
+            <button class="btn_6" data-modal-id="6">View</button>
+          </div>
         </div>
       </div>
     </section>
@@ -392,6 +401,7 @@
       </div>
     </footer>
     <script src="js/app.js"></script>
+    <script src="/js/slide.js"></script>
     <script src="js/tota11y.min.js"></script>
   </body>
 </html>

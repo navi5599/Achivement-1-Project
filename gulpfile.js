@@ -45,7 +45,7 @@ function browsersyncReload(cb) {
 function watchTask() {
   watch('*.html', browsersyncReload);
   watch(
-    ['scss/**/*.scss', 'js/**/*.js'],
+    ['sass/**/*.scss', 'js/**/*.js'],
     series(scssTask, jsTask, browsersyncReload)
   );
 }

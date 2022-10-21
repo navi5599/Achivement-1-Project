@@ -80,6 +80,10 @@
   padding: 0px;
 }
 
+.a-button-modal {
+  color: colors.$darkBlue;
+}
+
 .a-button-modal:hover {
   color: colors.$lightBlue;
   text-decoration: underline;
@@ -89,7 +93,7 @@
 .x_modal {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 20px;
   font-weight: bold;
   color: colors.$white;
   cursor: pointer;

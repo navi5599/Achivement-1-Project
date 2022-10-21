@@ -1,87 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ivan Kelava Contact</title>
-    <link rel="shortcut icon" href="img/student.svg"/>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
-    <link rel="stylesheet" type="text/css" href="css/style.production.css"/>
+    <link rel="shortcut icon" href="img/student.svg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.production.css"/> -->
+    <link rel="stylesheet" type="text/css" href="dist/style.css" />
   </head>
   <body>
-    <header class="page-header">
-      <h1 class="ivan-kelava_logo">Ivan Kelava</h1>
-      <nav class="main-navigation page-header_item">
-        <ul class="navigation-list" role="menubar">
-          <li role="presentation">
-            <a class="a-button" href="index.html" target="_blank" role="menuitem">Home</a>
+    <nav>
+      <div class="logo">
+        <h1>Ivan Kelava</h1>
+      </div>
+      <ul class="navigation-list" role="menubar">
+        <li role="presentation">
+          <a class="a-button" href="index.html" target="_blank" role="menuitem"
+            >Home</a
+          >
+        </li>
+        <li role="presentation">
+          <a class="a-button" href="about.html" target="_blank" role="menuitem"
+            >About me</a
+          >
+        </li>
+        <li role="presentation">
+          <a class="a-button" href="work.html" target="_blank" role="menuitem"
+            >Work</a
+          >
+        </li>
+        <li role="presentation">
+          <a
+            class="a-button"
+            href="contact.html"
+            target="_blank"
+            role="menuitem"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
+    <div class="contact_card">
+      <div class="second_card">
+        <h3>My contact Info</h3>
+        <ul class="contact_list">
+          <li>
+            <span>Phone</span><a href="tel:+491707183441">+49 170 718 3441</a>
           </li>
-          <li role="presentation">
-            <a class="a-button" href="about.html" target="_blank" role="menuitem">About me</a>
+          <li>
+            <span>Skype</span
+            ><a href="skype:uberman5599@hotmail.com">uberman5599@hotmail.com</a>
           </li>
-          <li role="presentation">
-            <a class="a-button" href="work.html" target="_blank" role="menuitem">Work</a>
-          </li>
-          <li role="presentation">
-            <a class="a-button" href="contact.html" target="_blank" role="menuitem">Contact</a>
+          <li>
+            <span>Email</span
+            ><a href="mailto:ivkelava10@gmail.com">ivkelava10@gmail.com</a>
           </li>
         </ul>
-      </nav>
-    </header>
-
-    <div class="contact-card">
-      <div class="contact-header">
-        <h2>Contact</h2>
       </div>
-      <div class="contact_info">
-        <form class="contact_form" action="login-form-action" method="post">
-          <div class="contact-body">
-            <div class="contact_part">
-              <label for="fname">First name</label><br>
-              <input type="text" id="fname" name="fname" required><br>
-    
-              <label for="lname">Last name</label><br>
-              <input type="text" id="lname" name="lname" required><br><br>
-            </div>
-            
-            <div class="contact_part">
-              <label for="telephone">Telephone</label><br>
-              <input type="tel" id="telephone"><br>
-    
-              <label for="e-mail">E-mail</label><br>
-              <input type="email" id="e-mail" name="user_email" required><br>
-            </div>
-          </div>
-        
-          <div class="text-div">
-            <textarea name="message" id="message" cols="58" rows="7" placeholder="Please type your message.."></textarea>
-          </div>
-
-          <div class="button-section">
-            <button class="contact_button" type="submit">Send</button>
-          </div>
-        </form>
-      </div>
-  
-      <div class="contact_info contact_footer">
-        <a class="a-button" href="tel:+491707183441">Tel +49 170 718 3441</a><br>
-        <a class="a-button" href="skype:uberman5599@hotmail.com">Skype: uberman5599@hotmail.com</a><br>
-        <a class="a-button" href="mailto:ivkelava10@gmail.com">ivkelava10@gmail.com</a><br>
+      <div class="first_card">
+        <h3>Send me a message</h3>
+        <input
+          name="first_name"
+          type="text"
+          class="contact_input"
+          placeholder="First name"
+          required
+        />
+        <input
+          name="last_name"
+          type="text"
+          class="contact_input"
+          placeholder="Last name"
+          required
+        />
+        <input
+          name="email"
+          type="text"
+          class="contact_input"
+          placeholder="Email"
+          required
+        />
+        <textarea
+          name="text"
+          class="contact_input text"
+          placeholder="Your message.."
+        ></textarea>
+        <input
+          class="contact_input submit_button"
+          type="submit"
+          value="SUBMIT"
+        />
       </div>
     </div>
-    
+
     <footer class="page-footer">
       <p>Find me on</p>
       <div class="social-media">
-        <a href="https://github.com/navi5599" target="_blank"><img src="img/git.svg" class="github-icon" alt="Github icon"></a>
-        <a href="https://twitter.com" target="_blank"><img src="img/twetr.svg" class="twitter-icon" alt="Twitter icon"></a>
-        <a href="https://www.linkedin.com/in/ivan-kelava-68527023b/" target="_blank"><img src="img/linkd.svg" class="linkedin-icon" alt="LinkedIn icon"></a>
+        <a href="https://github.com/navi5599" target="_blank"
+          ><img src="img/git.svg" class="github-icon" alt="Github icon"
+        /></a>
+        <a href="https://twitter.com" target="_blank"
+          ><img src="img/twetr.svg" class="twitter-icon" alt="Twitter icon"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/ivan-kelava-68527023b/"
+          target="_blank"
+          ><img src="img/linkd.svg" class="linkedin-icon" alt="LinkedIn icon"
+        /></a>
       </div>
     </footer>
 
+    <script src="/js/slide.js"></script>
     <script src="js/tota11y.min.js"></script>
   </body>
 </html>

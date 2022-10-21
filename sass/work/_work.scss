@@ -10,16 +10,21 @@
   margin: 0 auto;
   .grid_item {
     background: transparent;
+    height: 200px;
     padding: 10px;
     margin: 0;
     text-align: center;
     border-radius: 0.35rem;
     box-shadow: 0.5px 0.5px 10px colors.$darkBlue;
+    .button_div {
+      padding-top: 35px;
+    }
   }
-  &:hover {
-    transform: scale(1.05);
-    transition: 0.5s ease;
-  }
+}
+
+.grid_item:hover {
+  transform: scale(1.05);
+  transition: 0.5s ease;
 }
 
 .grid_links {
@@ -28,4 +33,5 @@
 
 .work {
   text-align: center;
+  margin-bottom: 50px;
 }
