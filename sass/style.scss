@@ -23,7 +23,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   background-color: colors.$white;
-  color: colors.$darkBlue;
+  color: colors.$white;
   h1 {
     font-size: 25px;
     font-weight: 700;
@@ -75,7 +75,7 @@ button {
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: colors.$lightBlue;
+    background-color: colors.$lightGreen;
     display: flex;
     flex-direction: column;
     width: 50%;

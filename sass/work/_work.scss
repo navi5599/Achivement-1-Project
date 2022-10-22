@@ -1,5 +1,21 @@
 @use '../colors';
 
+body {
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #538194,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .grid {
   display: -ms-grid;
   display: grid;
@@ -9,13 +25,14 @@
   width: 92.5%;
   margin: 0 auto;
   .grid_item {
-    background: transparent;
+    background: whitesmoke;
+    color: colors.$darkGreen;
     height: 200px;
     padding: 10px;
     margin: 0;
     text-align: center;
     border-radius: 0.35rem;
-    box-shadow: 0.5px 0.5px 10px colors.$darkBlue;
+
     .button_div {
       padding-top: 35px;
     }
@@ -25,6 +42,16 @@
 .grid_item:hover {
   transform: scale(1.05);
   transition: 0.5s ease;
+  background: opacity 0.5;
+  box-shadow: 0.5px 0.5px 10px colors.$darkOrange;
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
 }
 
 .grid_links {

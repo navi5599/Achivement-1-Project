@@ -20,7 +20,7 @@
 
 .first_card {
   position: relative;
-  background-color: colors.$white;
+  background-color: transparent;
   h3 {
     position: absolute;
     top: 15px;
@@ -41,7 +41,7 @@
   padding: 7px;
   outline: 0;
   border: none;
-  border-bottom: 2px solid colors.$darkBlue;
+  border-bottom: 2px solid colors.$darkOrange;
 }
 
 .submit_button {
@@ -50,7 +50,7 @@
   font-weight: 500;
   border: none;
   padding: 0;
-  background-color: colors.$darkBlue;
+  background-color: colors.$darkOrange;
   color: colors.$white;
   cursor: pointer;
   &:hover {
@@ -69,7 +69,7 @@
 
 .second_card {
   background: colors.$cardGradient;
-  color: colors.$white;
+  color: colors.$darkBlue;
   position: relative;
   h3 {
     position: absolute;
@@ -85,9 +85,10 @@
     padding-right: 10px;
   }
   a {
-    color: colors.$white;
+    color: colors.$darkBlue;
     &:hover {
       text-decoration: underline;
+      color: colors.$white;
     }
   }
 }

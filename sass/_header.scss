@@ -7,6 +7,7 @@
   letter-spacing: 3px;
   margin: 0;
   padding: 0;
+  padding-left: 15px;
   color: colors.$white;
 }
 
@@ -18,8 +19,19 @@ nav {
   width: 100%;
   height: 8vh;
   margin-bottom: 100px;
-  background: colors.$lightBlue; /* fallback for old browsers */
-  background: colors.$headerGradient; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .navigation-list {
@@ -32,15 +44,26 @@ nav {
   }
 }
 
-.a-button:hover {
-  color: colors.$darkBlue;
-  text-decoration: none;
-  border: 1px colors.$white;
-  border-radius: 4px;
-  background-color: colors.$white;
-  padding: 4px;
-  margin: -4px;
-  transition: 0.3s ease;
+.a-button {
+  display: inline-block;
+  position: relative;
+}
+
+.a-button::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: colors.$darkOrange;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.a-button:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .burger {
