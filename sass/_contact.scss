@@ -69,7 +69,7 @@
 
 .second_card {
   background: colors.$cardGradient;
-  color: colors.$darkBlue;
+  color: colors.$white;
   position: relative;
   h3 {
     position: absolute;
@@ -83,6 +83,7 @@
   }
   span {
     padding-right: 10px;
+    color: colors.$white;
   }
   a {
     color: colors.$darkBlue;

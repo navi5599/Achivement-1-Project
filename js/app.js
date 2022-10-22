@@ -1,3 +1,33 @@
+//Animation logo
+
+//Cursor logic
+
+const cursor = document.querySelector('.cursor');
+var timeout;
+
+document.addEventListener('mousemove', (e) => {
+  let x = e.pageX;
+  let y = e.pageY;
+
+  cursor.style.top = y + 'px';
+  cursor.style.left = x + 'px';
+
+  cursor.style.display = 'block';
+
+  //when mouse stops, remove animation
+  //   function mouseStopped() {
+  //     cursor.style.display = 'none';
+  //   }
+  //   clearTimeout(timeout);
+  //   timeout = setTimeout(mouseStopped, 1000);
+});
+
+document.addEventListener('mouseout', () => {
+  cursor.style.display = 'none';
+});
+
+//Modals logic
+
 let btn = document.querySelector('.btn_1');
 let btn2 = document.querySelector('.btn_2');
 let btn3 = document.querySelector('.btn_3');

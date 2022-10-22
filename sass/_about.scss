@@ -1,129 +1,25 @@
-.about-me_div {
-  text-align: center;
-}
-
-table {
+.profile {
+  max-width: 700px;
   margin: 0 auto;
-  padding-top: 20px;
-}
-
-.about-list {
-  list-style-type: none;
-}
-
-.svg {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  height: 250px;
   text-align: center;
 }
 
-/* Boat_animation */
-
-@-webkit-keyframes color-change {
-  0% {
-    fill: #e8e0fd;
-  }
-
-  25% {
-    fill: #9f7cf9;
-  }
-
-  50% {
-    fill: #7145e2;
-  }
-
-  75% {
-    fill: #5c1da6;
-  }
-
-  100% {
-    fill: #2f038e;
-  }
+.profile-text {
+  padding-top: 40px;
 }
 
-@keyframes color-change {
-  0% {
-    fill: #e8e0fd;
-  }
-
-  25% {
-    fill: #9f7cf9;
-  }
-
-  50% {
-    fill: #7145e2;
-  }
-
-  75% {
-    fill: #5c1da6;
-  }
-
-  100% {
-    fill: #2f038e;
-  }
+.profile_portrait {
+  width: 250px;
+  height: 250px;
+  float: left;
+  margin-right: 40px;
+  border-radius: 50%;
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.19));
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.5) 0px 6px 6px;
 }
 
-@-webkit-keyframes boat-movement {
-  from {
-    -webkit-transform: translate(-202.345px, -187.561px);
-    transform: translate(-202.345px, -187.561px);
-  }
-
-  to {
-    -webkit-transform: translate(-202.345px, -167.561px);
-    transform: translate(-202.345px, -167.561px);
-  }
-}
-
-@keyframes boat-movement {
-  from {
-    -webkit-transform: translate(-202.345px, -187.561px);
-    transform: translate(-202.345px, -187.561px);
-  }
-
-  to {
-    -webkit-transform: translate(-202.345px, -167.561px);
-    transform: translate(-202.345px, -167.561px);
-  }
-}
-
-@-webkit-keyframes pillar-movement {
-  from {
-    -webkit-transform: translate(584.82569px, 129.22117px);
-    transform: translate(584.82569px, 129.22117px);
-  }
-
-  to {
-    -webkit-transform: translate(584.82569px, 109.22117px);
-    transform: translate(584.82569px, 109.22117px);
-  }
-}
-
-@keyframes pillar-movement {
-  from {
-    -webkit-transform: translate(584.82569px, 129.22117px);
-    transform: translate(584.82569px, 129.22117px);
-  }
-
-  to {
-    -webkit-transform: translate(584.82569px, 109.22117px);
-    transform: translate(584.82569px, 109.22117px);
-  }
-}
-
-.pillar {
-  -webkit-animation: 5s pillar-movement infinite alternate linear;
-  animation: 5s pillar-movement infinite alternate linear;
-}
-
-.boat,
-.flag,
-.fence {
-  -webkit-animation: 5s boat-movement infinite alternate linear;
-  animation: 5s boat-movement infinite alternate linear;
-}
-
-.circle {
-  -webkit-animation: 4s color-change infinite alternate linear;
-  animation: 4s color-change infinite alternate linear;
+.code-link {
+  display: block;
+  box-sizing: border-box;
 }
