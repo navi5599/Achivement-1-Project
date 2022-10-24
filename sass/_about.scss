@@ -1,25 +1,30 @@
-.profile {
-  max-width: 700px;
-  margin: 0 auto;
-  height: 250px;
+@use './colors';
+
+.about_heading {
+  text-transform: uppercase;
+  font-size: 80px;
+  align-items: center;
   text-align: center;
 }
 
+.profile {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
 .profile-text {
-  padding-top: 40px;
+  max-width: 500px;
 }
 
 .profile_portrait {
-  width: 250px;
-  height: 250px;
-  float: left;
-  margin-right: 40px;
-  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  border-radius: 10%;
   filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.19));
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.5) 0px 6px 6px;
 }
 
-.code-link {
-  display: block;
-  box-sizing: border-box;
+span {
+  color: colors.$darkOrange;
 }

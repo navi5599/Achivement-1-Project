@@ -4,6 +4,7 @@
   text-transform: uppercase;
   font-size: 150px;
   margin-left: 50px;
+  margin-bottom: 70px;
 }
 
 .orange {
@@ -25,13 +26,18 @@
   border-radius: 5px;
   text-align: center;
   vertical-align: middle;
+}
+
+.code {
   transform: rotate(20deg);
+  &:hover {
+    transform: rotate(-5deg);
+  }
 }
 
 .code_link:hover {
   background-color: colors.$darkOrange;
   transition: 0.33s;
-  transform: rotate(-20deg);
 }
 
 .main_section {
@@ -46,5 +52,16 @@
 }
 
 .download {
-  transform: rotate(20deg);
+  width: 110px;
+  margin-bottom: 10px;
+}
+
+.arrow_1 {
+  height: 30px;
+  width: 50px;
+}
+
+.cv {
+  display: flex;
+  flex-direction: column;
 }

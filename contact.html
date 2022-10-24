@@ -11,9 +11,22 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@100&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.production.css"/> -->
     <link rel="stylesheet" type="text/css" href="dist/style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init('zre67_jv3bjsZq2Nj');
+      })();
+    </script>
   </head>
   <body>
     <nav>
@@ -54,7 +67,7 @@
     </nav>
 
     <div class="contact_card">
-      <div class="second_card">
+      <div class="second_card animate__animated animate__backInLeft">
         <h3>My contact Info</h3>
         <ul class="contact_list">
           <li>
@@ -70,23 +83,26 @@
           </li>
         </ul>
       </div>
-      <div class="first_card">
+      <form class="first_card animate__animated animate__backInRight">
         <h3>Send me a message</h3>
         <input
-          name="first_name"
+          id="name"
+          name="name"
           type="text"
           class="contact_input"
-          placeholder="First name"
+          placeholder="Full name"
           required
         />
         <input
-          name="last_name"
+          id="phone"
+          name="phone"
           type="text"
           class="contact_input"
-          placeholder="Last name"
+          placeholder="Phone number"
           required
         />
         <input
+          id="email"
           name="email"
           type="text"
           class="contact_input"
@@ -94,16 +110,22 @@
           required
         />
         <textarea
-          name="text"
+          id="message"
+          name="message"
           class="contact_input text"
           placeholder="Your message.."
         ></textarea>
-        <input
+        <p id="error_message">All fields are required!</p>
+        <button class="contact_input submit_button" onclick="sendMail()">
+          SUBMIT
+        </button>
+        <p id="confirmal_message">Message has been sent. Thank you!</p>
+        <!-- <input
           class="contact_input submit_button"
           type="submit"
           value="SUBMIT"
-        />
-      </div>
+        /> -->
+      </form>
     </div>
 
     <footer class="page-footer">
@@ -125,6 +147,6 @@
 
     <script src="/js/slide.js"></script>
     <script src="js/tota11y.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/server.js"></script>
   </body>
 </html>

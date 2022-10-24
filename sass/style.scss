@@ -9,7 +9,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Monoton&family=Montserrat:wght@300;500&family=Poppins:wght@300&family=Roboto+Condensed&family=Roboto:wght@100;300&family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Herr+Von+Muellerhoff&family=Monoton&family=Montserrat:wght@300;500&family=Poppins:wght@300&family=Roboto+Condensed&family=Roboto:wght@100;300&family=Shadows+Into+Light&display=swap');
-@import 'animate.css';
 
 * {
   -webkit-box-sizing: border-box;
@@ -107,38 +106,3 @@ button {
 }
 
 // Cursor
-
-.cursor {
-  z-index: 999;
-  position: fixed;
-  background-color: colors.$lightOrange;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  pointer-events: none;
-  box-shadow: 0 0 10px colors.$darkOrange, 0 0 60px colors.$darkOrange,
-    0 0 100px colors.$lightOrange;
-  animation: colors 4s infinite;
-  transform: translate(-50%, -50%);
-  display: none;
-}
-
-.cursor:before {
-  content: '';
-  position: absolute;
-  background-color: colors.$lightOrange;
-  width: 40px;
-  height: 40px;
-  opacity: 0.3;
-  transform: translate(-30%, -30%);
-  border-radius: 50%;
-}
-
-@keyframes colors {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-  }
-}
