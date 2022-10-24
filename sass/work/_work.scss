@@ -2,18 +2,8 @@
 
 body {
   background: #0f2027; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #2c5364,
-    #203a43,
-    #0f2027
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #538194,
-    #203a43,
-    #0f2027
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #538194, #203a43, #0f2027);
 }
 
 .grid {
@@ -25,25 +15,93 @@ body {
   width: 92.5%;
   margin: 0 auto;
   .grid_item {
-    background: whitesmoke;
-    color: colors.$darkGreen;
     height: 200px;
     padding: 10px;
     margin: 0;
     text-align: center;
     border-radius: 0.35rem;
-
     .button_div {
       padding-top: 35px;
     }
   }
 }
+//cards
+.grid_1 {
+  background: linear-gradient(to right, #e6fc96, #e48c00);
 
-.grid_item:hover {
-  transform: scale(1.05);
-  transition: 0.5s ease;
-  background: opacity 0.5;
-  box-shadow: 0.5px 0.5px 10px colors.$darkOrange;
+  color: colors.$darkGreen;
+  &:hover {
+    transform: scale(1.2);
+    transition: 0.5s ease;
+    background: opacity 0.5;
+    box-shadow: 0.5px 0.5px 10px colors.$darkOrange;
+  }
+}
+
+.card_header {
+  font-size: 50px;
+}
+
+.grid_2 {
+  background: linear-gradient(to right, rgb(179, 205, 254), rgb(47, 36, 205));
+
+  color: colors.$darkGreen;
+  &:hover {
+    transform: scale(1.2);
+    transition: 0.5s ease;
+    background: opacity 0.5;
+    box-shadow: 0.5px 0.5px 10px colors.$mediumBlue;
+  }
+}
+
+.grid_3 {
+  background: linear-gradient(to right, rgb(254, 179, 179), rgb(182, 52, 0));
+
+  color: whitesmoke;
+  &:hover {
+    transform: scale(1.2);
+    transition: 0.5s ease;
+    background: opacity 0.5;
+    box-shadow: 0.5px 0.5px 10px colors.$darkOrange;
+  }
+}
+
+.grid_4 {
+  background: linear-gradient(to right, rgb(208, 208, 208), rgb(0, 182, 173));
+
+  color: colors.$darkGreen;
+  &:hover {
+    transform: scale(1.2);
+    transition: 0.5s ease;
+    background: opacity 0.5;
+    box-shadow: 0.5px 0.5px 10px colors.$darkGreen;
+  }
+}
+
+.grid_5 {
+  background: linear-gradient(to right, rgb(234, 176, 251), rgb(110, 20, 219));
+  color: colors.$darkGreen;
+  &:hover {
+    transform: scale(1.2);
+    transition: 0.5s ease;
+    background: opacity 0.5;
+    box-shadow: 0.5px 0.5px 10px colors.$darkPurple;
+  }
+}
+
+h2 {
+  font-weight: 900;
+}
+
+.grid_6 {
+  background: linear-gradient(to right, rgb(176, 251, 183), rgb(1, 178, 33));
+  color: colors.$darkGreen;
+  &:hover {
+    transform: scale(1.2);
+    transition: 0.5s ease;
+    background: opacity 0.5;
+    box-shadow: 0.5px 0.5px 10px colors.$darkGreen;
+  }
 }
 
 .invisible {

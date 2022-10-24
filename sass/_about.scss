@@ -28,3 +28,26 @@
 span {
   color: colors.$darkOrange;
 }
+
+ul li img {
+  width: 50px;
+  height: 50px;
+}
+
+.skills {
+  margin-top: 30px;
+  p {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+.icon_list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  img {
+    margin-left: 20px;
+  }
+}
