@@ -101,7 +101,7 @@ close_icon6.addEventListener('click', () => {
   modal_container6.classList.remove('modal_active');
 });
 
-// SLIDER
+// MODAL SLIDER
 
 let slideIndex = 1;
 
