@@ -16,40 +16,50 @@
     <link rel="stylesheet" type="text/css" href="dist/style.css" />
   </head>
   <body>
-    <nav>
+    <nav class="navbar">
       <div class="logo">
         <h1>Ivan Kelava</h1>
       </div>
-      <ul class="navigation-list" role="menubar">
-        <li role="presentation">
-          <a class="a-button" href="index.html" target="_blank" role="menuitem"
-            >Home</a
-          >
-        </li>
-        <li role="presentation">
-          <a class="a-button" href="about.html" target="_blank" role="menuitem"
-            >About me</a
-          >
-        </li>
-        <li role="presentation">
-          <a class="a-button" href="work.html" target="_blank" role="menuitem"
-            >Work</a
-          >
-        </li>
-        <li role="presentation">
-          <a
-            class="a-button"
-            href="contact.html"
-            target="_blank"
-            role="menuitem"
-            >Contact</a
-          >
-        </li>
-      </ul>
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul role="menubar">
+          <li role="presentation">
+            <a
+              class="a-button"
+              href="index.html"
+              target="_blank"
+              role="menuitem"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              class="a-button"
+              href="about.html"
+              target="_blank"
+              role="menuitem"
+              >About me</a
+            >
+          </li>
+          <li role="presentation">
+            <a class="a-button" href="work.html" target="_blank" role="menuitem"
+              >Work</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              class="a-button"
+              href="contact.html"
+              target="_blank"
+              role="menuitem"
+              >Contact</a
+            >
+          </li>
+        </ul>
       </div>
     </nav>
 
@@ -120,18 +130,21 @@
         </li>
         <li>
           <img
+            class="contrast_icon"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
             alt="node icon"
           />
         </li>
         <li>
           <img
+            class="contrast_icon"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
             alt="mongo icon"
           />
         </li>
         <li>
           <img
+            class="contrast_icon"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg"
             alt="express icon"
           />

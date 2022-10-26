@@ -1,12 +1,6 @@
-const navSlider = () => {
-  const burger = document.querySelector('.burger');
-  const nav = document.querySelector('.navigation-list');
-  const navLinks = document.querySelectorAll('.navigation-list li');
+const toggleButton = document.getElementsByClassName('toggle-button')[0];
+const navbarLinks = document.getElementsByClassName('navbar-links')[0];
 
-  // toggle nav
-  burger.addEventListener('click', () => {
-    nav.classList.toggle('nav-active');
-  });
-};
-
-navSlider();
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active');
+});

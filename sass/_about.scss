@@ -51,3 +51,41 @@ ul li img {
     margin-left: 20px;
   }
 }
+
+.contrast_icon {
+  background-color: colors.$white;
+  border-radius: 5px;
+}
+
+//Mobile view
+@media (max-width: 800px) {
+  .about_heading {
+    text-transform: uppercase;
+    font-size: 40px;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile_portrait {
+    width: 250px;
+    height: 250px;
+  }
+
+  .profile-text {
+    padding: 40px;
+  }
+  .skills {
+    margin: 0 auto;
+  }
+  .icon_list {
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+}

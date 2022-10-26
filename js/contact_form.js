@@ -10,6 +10,7 @@ button.addEventListener('click', (e) => {
   button.disabled = true;
   button.classList.add('after_submit_button');
 });
+
 //Sending email with emailjs
 function sendMail() {
   //get all infos to send

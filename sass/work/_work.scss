@@ -123,3 +123,10 @@ h2 {
   text-align: center;
   margin-bottom: 50px;
 }
+
+@media (max-width: 800px) {
+  .work {
+    text-transform: uppercase;
+    font-size: 40px;
+  }
+}

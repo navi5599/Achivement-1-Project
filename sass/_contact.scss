@@ -3,6 +3,7 @@
 .contact_card {
   width: 700px;
   height: 500px;
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
   margin: 0 auto;
@@ -36,7 +37,6 @@
   font-size: 12px;
   opacity: 90%;
   background-color: transparent;
-
   transition: all 0.3s;
   padding: 7px;
   outline: 0;
@@ -92,6 +92,10 @@
   resize: none;
 }
 
+.copy {
+  display: none;
+}
+
 //SECOND PART OF CARD
 
 .second_card {
@@ -118,5 +122,39 @@
       text-decoration: underline;
       color: colors.$white;
     }
+  }
+}
+
+//Mobile view
+
+@media (max-width: 800px) {
+  .contact_card {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 550px;
+    margin: 0 auto;
+    padding-top: 25px;
+    margin-bottom: 200px;
+  }
+
+  .second_card {
+    display: none;
+  }
+
+  .first_card {
+    margin: 0 auto;
+    width: 100%;
+    h3 {
+      position: relative;
+      margin-bottom: 25px;
+    }
+  }
+
+  .copy {
+    display: flex;
+    width: 450px;
+    height: 350px;
+    margin-top: 50px;
   }
 }
