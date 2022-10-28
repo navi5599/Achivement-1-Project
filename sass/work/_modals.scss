@@ -179,3 +179,26 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 800px) {
+  .modal_1,
+  .modal_2,
+  .modal_3,
+  .modal_4,
+  .modal_5,
+  .modal_6 {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .modal_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: small;
+  }
+
+  .modal_list {
+    margin-top: 20px;
+  }
+}
